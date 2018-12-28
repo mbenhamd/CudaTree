@@ -8,7 +8,7 @@ from .util import  dtype_to_ctype, get_best_dtype, start_timer, end_timer
 from .base_tree import BaseTree
 from pycuda import driver
 import random
-from parakeet import jit
+from numba import jit
 from .util import start_timer, end_timer, show_timings
 import sys
 from . import util
