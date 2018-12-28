@@ -39,12 +39,12 @@ CudaTree is writen for Python 3.6 and depends on:
     packages = find_packages() + ['cudatree.test'],
     package_dir = {'cudatree.test' : './test'},
     package_data = {'cudatree' : ['cuda_kernels/*.cu']},
-    url = "https://github.com/EasonLiao/CudaTree",
+    url = "https://github.com/mbenhamd/CudaTree",
     install_requires = [
         'numpy',
         'scikit-learn',
         'pycuda',
-        "parakeet"
+        "numba"
       ],
     license="BSD",
     classifiers=['Development Status :: 3 - Alpha',
