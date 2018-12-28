@@ -6,7 +6,7 @@ from pycuda import driver
 from .util import start_timer, end_timer, show_timings
 from numba import jit
 import math
-
+from sklearn.base import BaseEstimator, ClassifierMixin
 import numba
 #parakeet.config.backend = "c"
 
@@ -23,7 +23,7 @@ def restore_forest(trees, dtype_labels):
   return f
 
 
-class RandomForestClassifier(object):
+class RandomForestClassifier(BaseEstimator, ClassifierMixin):
   """A random forest classifier.
 
     A random forest is a meta estimator that fits a number of classifical
@@ -290,7 +290,7 @@ class RandomForestClassifier(object):
     return bfs_threshold 
 
 
-  def fit(self, samples, target, bfs_threshold = None):
+  def fit(self,X, y=None, bfs_threshold = None):
     """Construce multiple trees in the forest.
 
     Parameters
@@ -309,7 +309,7 @@ class RandomForestClassifier(object):
     self : object
       Returns self
     """
-    self.fit_init(samples, target)
+    self.fit_init(X, y)
     
     if bfs_threshold is not None: 
       self.bfs_threshold = bfs_threshold
