@@ -4,7 +4,7 @@ from .util import timer, get_best_dtype, dtype_to_ctype, mk_kernel, mk_tex_kerne
 from pycuda import gpuarray
 from pycuda import driver
 from .util import start_timer, end_timer, show_timings
-from parakeet import jit
+from numba import jit
 import math
 
 import parakeet
