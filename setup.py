@@ -25,12 +25,12 @@ Usage
 Dependencies
 --------------
 
-CudaTree is writen for Python 2.7 and depends on:
+CudaTree is writen for Python 3.6 and depends on:
 
 * scikit-learn
 * NumPy
 * PyCUDA
-*  Parakeet
+* Numba 
 ''',
     version = cudatree.__version__,
     description = "Random Forests for the GPU using PyCUDA",
@@ -53,5 +53,5 @@ CudaTree is writen for Python 2.7 and depends on:
                   'License :: OSI Approved :: BSD License',
                   'Intended Audience :: Developers',
                   'Intended Audience :: Science/Research', 
-                  'Programming Language :: Python :: 2.7',
+                  'Programming Language :: Python :: 3.6',
                 ])
