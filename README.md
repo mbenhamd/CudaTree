@@ -1,6 +1,6 @@
 CudaTree
 ==================
-**Forked from the original repository written for python 2.7 and support python 3.6 now**
+**Forked from the original repository written for python 2.7 and support python 3.6 now.**
 **I decide to stop maintaining CudaTree since scikit-learn made a sigificant improvements on its random forest and it's well maintained.**
 
 CudaTree is an implementation of Leo Breiman's [Random Forests](http://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm)
