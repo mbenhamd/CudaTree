@@ -7,7 +7,7 @@ from .util import start_timer, end_timer, show_timings
 from numba import jit
 import math
 
-import parakeet
+import numba
 #parakeet.config.backend = "c"
 
 @jit
