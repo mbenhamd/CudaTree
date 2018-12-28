@@ -81,6 +81,7 @@ class RandomForestClassifier(object):
     self.n_estimators = n_estimators
     self.debug = debug
     self._trees = list()
+    self.dtype_labels = None
 
   def __compact_labels(self, target):
     def check_is_compacted(x):
